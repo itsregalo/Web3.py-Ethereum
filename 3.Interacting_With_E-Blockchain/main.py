@@ -10,4 +10,9 @@ print(w3.is_connected())
 # check the block number
 block_number = w3.eth.block_number
 
-print("Block number: ", block_number)
+print("Block number: ", block_number) # block number is the number of blocks in the blockchain
+
+# check the balance of an account
+latest_block = w3.eth.get_block('latest')
+
+print("Latest block: ", latest_block)
