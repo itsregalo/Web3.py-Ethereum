@@ -16,3 +16,8 @@ print("Block number: ", block_number) # block number is the number of blocks in 
 latest_block = w3.eth.get_block('latest')
 
 print("Latest block: ", latest_block)
+
+# checking the balance of an account
+balance = w3.eth.get_balance('0x8d12A197cB00D4747a1fe03395095ce2A5CC6819')
+
+print("Balance: ", balance)
